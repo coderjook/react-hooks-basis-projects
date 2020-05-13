@@ -11,7 +11,7 @@ const Stories = () => {
     <div className="Stories">
       <h3>Nieuw headline stories </h3>
       {/* stories elementen uitlezen en voor elk element een paar variabelen laten zien */}
-      {/* {stories.map((story) => {
+      {stories.map((story) => {
         const { id, by, time, title, url } = story;
 
         return (
@@ -22,7 +22,7 @@ const Stories = () => {
             </div>
           </div>
         );
-      })} */}
+      })}
     </div>
   );
 };
