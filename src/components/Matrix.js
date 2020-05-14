@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import MATRIX_FRAMES from "../assets/matrix";
+import MATRIX_FRAMES from "../data/matrix";
 
 const Matrix = () => {
   const [index, setIndex] = useState(0);
+  // const [delay, setDelay] = useState(500);
+  // const [increment, setIncrement] = useState(5);
 
   useEffect(() => {
     const interval = setInterval(() => {

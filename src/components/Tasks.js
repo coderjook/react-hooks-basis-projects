@@ -53,7 +53,7 @@ const Tasks = () => {
   return (
     <div>
       <h3>Tasks</h3>
-      {/* <div className="form">
+      <div className="form">
         <input value={taskText} onChange={updateTaskText} />
         <button onClick={addTask}>Add Task</button>
       </div>
@@ -79,7 +79,7 @@ const Tasks = () => {
             </div>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -3,6 +3,8 @@ import Stories from "./components/Stories";
 import News from "./components/News";
 import Tasks from "./components/Tasks";
 import Gallery from "./Gallery";
+import Matrix from "./components/Matrix";
+
 import "./App.css";
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
 
       <hr />
       <Stories />
+      <hr />
+      <Matrix />
     </div>
   );
 }
