@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Stories from "./components/Stories";
 import News from "./components/News";
 import Tasks from "./components/Tasks";
+import Gallery from "./Gallery";
 import "./App.css";
 
 function App() {
   const [userQuery, setUserQuery] = useState("");
+  const [showGallery, setShowGallery] = useState(true);
 
   // input value -update
   const updateUserQuery = (event) => {
@@ -24,6 +26,11 @@ function App() {
     window.open(`https://google.com/search?q=${userQuery}`, "_blank");
   };
 
+  // helpermethod om de gallery te verbergen en te laten verschijnen
+  const toggleShowGallery = () => {
+    setShowGallery(!showGallery);
+  };
+
   return (
     <div className="App">
       <h1>Hallo Jook</h1>
@@ -39,6 +46,15 @@ function App() {
       <Tasks />
       <hr />
       <News />
+      <hr />
+      <div>
+        {showGallery ? <Gallery /> : null}
+        <button onClick={toggleShowGallery}>
+          {showGallery ? "Hide" : "Show"}
+        </button>
+      </div>
+
+      <hr />
       <Stories />
     </div>
   );
