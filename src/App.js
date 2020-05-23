@@ -4,6 +4,7 @@ import News from "./components/News";
 import Tasks from "./components/Tasks";
 import Gallery from "./Gallery";
 import Matrix from "./components/Matrix";
+import Login from "./components/user/Login";
 
 import "./App.css";
 
@@ -44,6 +45,8 @@ function App() {
         />
         <button onClick={searchQuery}>Google Search</button>
       </div>
+      <hr />
+      <Login />
       <hr />
       <Tasks />
       <hr />
